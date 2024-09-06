@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthy Snack Recipe Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Recipe Book</h1>
+        
+        <!-- Search Form -->
+        <input type="text" id="search-input" placeholder="Search for a recipe...">
+        
+        <!-- Add Recipe Form -->
+        <form id="add-recipe-form">
+            <h2>Add a New Recipe</h2>
+            <input type="text" id="recipe-name" placeholder="Recipe Name" required>
+            <input type="text" id="recipe-image" placeholder="Image URL" required>
+            <textarea id="recipe-ingredients" placeholder="Ingredients (comma separated)" required></textarea>
+            <textarea id="recipe-instructions" placeholder="Instructions" required></textarea>
+            <button type="submit">Add Recipe</button>
+			
+        </form>
+
+        <div class="recipe-list" id="recipe-list">
+            <!-- Recipes will be displayed here -->
+        </div>
+
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
